@@ -18,7 +18,17 @@ h4{
 	padding-top: 20px;
 }
 
+a:link{
+    color: red;
+}
 
+a:visited{
+    color: grey;
+}
+
+a:hover{
+    color: pink;
+}
 body{
 	background-color: black;
 	color: white;
