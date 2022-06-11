@@ -6,11 +6,32 @@
         <nav> 
             <a href="index.html">Home</a>
             <a href="CV.html">Dutch Resume</a>
-            English Resume
+            English Resume (TO DO)
             <a href="contact.html">Contact</a>
         </nav>
     </head>
     <body>
+        <h1>Persoonlijke gegevens</h1>
+        <table>
+            <tr>
+                <td>Leeftijd:</td> 
+                <td id="age"></td>
+            </tr>
+            <tr>
+                <td>Over mij:</td>
+                <td><p>Een creatieveling dat graag met software, systemen en mensen werkt om het resultaat te laten bewegen. Ik houd ervan om moeilijke problemen te analyseren en met anderen samen te werken om een oplossing te vinden. Ik krijg plezier om op locatie een machine te zien werken.</p></td>
+            </tr>
+        </table>
+        <script>
+        const birthdate = new Date("1989-08-07")
+        // Credit: https://stackoverflow.com/questions/4060004/calculate-age-given-the-birth-date-in-the-format-yyyymmdd
+        function _calculateAge(birthday) { // birthday is a date
+            var ageDifMs = Date.now() - birthday.getTime();
+            var ageDate = new Date(ageDifMs); // miliseconds from epoch
+            return Math.abs(ageDate.getUTCFullYear() - 1970);
+        }
+        document.getElementById("age").innerHTML = _calculateAge(birthdate);
+        </script>
         <h1>Werk ervaring</h1>
             <h2><a href="https://ict.eu/">ICT</a>: 2013 - heden</h2>
                 <section class="company">
@@ -20,7 +41,15 @@
                     <il><i>Software Engineer</i></il></br>
                     <il><i>Test Engineer</i></il></br>
                 </ul>
-                <h3><a href="https://www.vanderlande.com/">Vanderlande</a>: 2016 - heden</h3>
+                <h3><a href="https://www.lagerweywind.nl/">Lagerwey/Enercon</a>: 2021 - heden</h3>
+                <ul>
+                    <il>Onderhouden en updaten van software op bestaande turbines</il>
+                    <il>Analyseren van problemen in het veld bij bestaande turbines</il>
+                    <il>Oplossen van problemen in het veld</il>
+                    <il>Automatische testen maken met behulp van Java/Maven met behulp van gitlab</il>
+                    <il>Gewerkt op een agile manier met een kanban board met Jira en Confluence</il>
+                </ul>
+                <h3><a href="https://www.vanderlande.com/">Vanderlande</a>: 2016 - 2021</h3>
                     <section>
                     <p>Tijdens deze periode werkte ik aan verschillende projecten. Dit waren zowel interne als externe projecten.</p>
                     <p>Bij alle projecten werkte ik met Siemens PLC’s. De libraries waren geschreven in STL en heb ik hier veel ervaring en kennis mee opgedaan.</p>
