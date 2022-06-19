@@ -6,16 +6,19 @@ h1{
 h2{
 	color: White;
 	padding-top: 20px;
+    margin-left:20px;
 }
 
 h3{
 	color: White;
 	padding-top: 20px;
+    margin-left:40px;
 }
 
 h4{
 	color: White;
 	padding-top: 20px;
+    margin-left:60px;
 }
 
 a:link{
@@ -29,10 +32,71 @@ a:visited{
 a:hover{
     color: pink;
 }
+table{
+    margin-left:30px;
+    width:55%;
+}
+table td{
+    padding-right:10px;
+}
+th{
+    text-align:left;
+    font-style:bold;
+    padding-right:10px;
+}
+
+/*
+ *  Trying out flexbox to get the stuff to go correctly.  
+ *  Basically the idea is to  have the profile picture next to the about me section
+ *  with the container and item (/profilepic) 
+ *  */
+.container{
+	display: flex;
+	width:80%;
+}
+.item{
+	flex-basis: 100%;
+	margin: 5px;
+}
+.profilepic{
+	margin: 5% auto;
+	width:100%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.element{
+	display: inline;
+	width: 80%;
+	
+}
+td.personal{
+    text-align:left;
+}
+td.personalleft{
+    text-align:right;
+    vertical-align:top;
+}
+section.company{
+    margin-left:20px;
+    width: 67%;
+}
+section.project{
+    margin-left:80px;
+       width: 60%;
+}
+p.role{
+    font-style: italic;
+    color: lightgray;
+}
+p{
+    margin-left:20px;
+}
 body{
 	background-color: black;
 	color: white;
 	margin-left: 50px;
 	margin-right: 50px;
     font-family: "Bitstream Vera Sans";
+    width:90%;
 }
