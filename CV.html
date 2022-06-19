@@ -12,26 +12,97 @@
     </head>
     <body>
         <h1>Persoonlijke gegevens</h1>
-        <table>
-            <tr>
-                <td>Leeftijd:</td> 
-                <td id="age"></td>
-            </tr>
-            <tr>
-                <td>Over mij:</td>
-                <td><p>Een creatieveling dat graag met software, systemen en mensen werkt om het resultaat te laten bewegen. Ik houd ervan om moeilijke problemen te analyseren en met anderen samen te werken om een oplossing te vinden. Ik krijg plezier om op locatie een machine te zien werken.</p></td>
-            </tr>
-        </table>
+	<div class="container">
+		<div class="profilepic">
+			<img src="https://pixelfed.social/storage/avatars/000/000/000/000/001/392/9/x1GVUevhedUPJlcXYAr6_avatar.jpeg?v=2"></img>
+		</div>
+		<div class="item">
+			<h2>Over mij</h2>
+			<p>Een creatieveling dat graag met software, systemen en mensen werkt om het resultaat te laten bewegen.</p> 
+			<p>Ik houd ervan om moeilijke problemen te analyseren en met anderen samen te werken om een oplossing te vinden.</p> 
+			<p>Ik krijg plezier om op locatie een machine te zien werken.</p>
+		</td>	
+		</div>
+	</div>
+	<div class="container">
+		<div class="item">
+			    <h3> Leeftijd </h3>
+			    <b><p id="age"></p></b>
+			    <p> jaar oud, dus geboren op</p>
+			    <b><p> 7 augustus 1989 </p></b>
+		</div>
+		<div class="item">
+			<h3>Talen</h3>
+			<ul>
+				<li>Nederlands</li>
+				<li>Engels</li>
+				<li>Duits</li>
+				<li>Indonesisch</li>
+			</ul>
+		</div>
+		<div class="item">
+			<h3>Vaardigheden</h3>
+			<ul>
+				<li>Creatief</li>
+				<li>Analytisch</li>
+				<li>Oplossingsgericht</li>
+			</ul>
+		</div>
+		<div class="item">
+			<h3>Hobby's</h3>
+			<ul>
+				<li>Sporten, zoals skateboarden en basketballen</li>
+				<li>Programmeren</li>
+				<li>Muziek spelen</li>
+				<li>Films maken</li>
+			</ul>
+		</div>
+	</div>
         <script>
-        const birthdate = new Date("1989-08-07")
-        // Credit: https://stackoverflow.com/questions/4060004/calculate-age-given-the-birth-date-in-the-format-yyyymmdd
-        function _calculateAge(birthday) { // birthday is a date
-            var ageDifMs = Date.now() - birthday.getTime();
-            var ageDate = new Date(ageDifMs); // miliseconds from epoch
-            return Math.abs(ageDate.getUTCFullYear() - 1970);
-        }
-        document.getElementById("age").innerHTML = _calculateAge(birthdate);
+		const birthdate = new Date("1989-08-07")
+                // Credit: https://stackoverflow.com/questions/4060004/calculate-age-given-the-birth-date-in-the-format-yyyymmdd
+                function _calculateAge(birthday) { // birthday is a date
+			var ageDifMs = Date.now() - birthday.getTime();
+			var ageDate = new Date(ageDifMs); // miliseconds from epoch
+			return Math.abs(ageDate.getUTCFullYear() - 1970);
+		}
+                document.getElementById("age").innerHTML = _calculateAge(birthdate);
         </script>
+	<h1>Educatie</h1>
+	<div class="container">
+		<div class="item">
+			<h2>Opleidingen</h2>
+			<table>
+				<tr>
+					<th>School</th>
+					<th>Opleiding</th>
+					<th>Diploma</th>
+				</tr>
+				<tr>
+					<td>TU Twente</td>
+					<td>Embedded Systems</td>
+					<td>&#10060</td>
+				</tr>
+				<tr>
+					<td>Windesheim</td>
+					<td>HBO Elektrotechniek</td>
+					<td>&#9989</td>
+				</tr>
+				<tr>
+					<td>Thorbecke</td>
+					<td>HAVO</td>
+					<td>&#9989</td>
+				</tr>
+			</table>
+		</div>
+		<div class="item">
+			<h2>Cursussen</h2>
+			<ul>
+				<li>&#9989 Siemens Systeem cursus 1A+B</li>
+				<li>&#9989 ISQTB Foundation</li>
+			</ul>
+		</div>
+	</div >
         <h1>Werk ervaring</h1>
             <h2><a href="https://ict.eu/">ICT</a>: 2013 - heden</h2>
                 <section class="company">
@@ -41,60 +112,89 @@
                     <il><i>Software Engineer</i></il></br>
                     <il><i>Test Engineer</i></il></br>
                 </ul>
+                </section>
                 <h3><a href="https://www.lagerweywind.nl/">Lagerwey/Enercon</a>: 2021 - heden</h3>
-                <ul>
-                    <il>Onderhouden en updaten van software op bestaande turbines</il>
-                    <il>Analyseren van problemen in het veld bij bestaande turbines</il>
-                    <il>Oplossen van problemen in het veld</il>
-                    <il>Automatische testen maken met behulp van Java/Maven met behulp van gitlab</il>
-                    <il>Gewerkt op een agile manier met een kanban board met Jira en Confluence</il>
-                </ul>
+                <section class="company">
+                <p> Bij Lagerwey heb ik me vooral bezig gehouden met het updaten en onderhouden van de bestaande turbines. Wanneer er problemen worden ontdekt in de software, dan rapporteer ik deze problemen aan het team via Jira. 
+                In overleg met het team, pakte ik deze problemen op en loste deze op. Sommige problemen werden aan het team gegeven als het bleek dat er te veel problemen waren. Hier volgde ik wel de statussen en de oplossingen om dit later ook op de bestaande turbines te testen. 
+                </p>
+                <p>
+                Voor vele problemen moest er eerst een analyse gedaan worden. Hierbij verzamelde ik de relevante data en probeerde aan de hand daarvan te begrijpen wat het probleem veroorzaakt. Ik ben dan op zoek naar de rootcause van het probleem. Op basis van die analyse maak ik een oplossing. Afhankelijk van de mogelijkheden test ik de oplossing op het kantoor of op een turbine. 
+                </p>
+                <p>
+                Voor het testen wordt er gebruik gemaakt van Java m.b.v. Maven. Hier worden test scripts gemaakt om de functionaliteiten in de software te testen op een PLC. Hierbij wordt gebruik gemaakt van Gitlab om CI/CD proces met pipelines te faciliteren. Hierdoor kan de software na elke wijziging getest worden. 
+                </p>
+                <p>
+                Met het team werkten we door de agile methode kanban. Hierin maakten we veel gebruik van Jira en Confluence.
+                </p>
+                </section>
                 <h3><a href="https://www.vanderlande.com/">Vanderlande</a>: 2016 - 2021</h3>
-                    <section>
+                    <section class="company">
                     <p>Tijdens deze periode werkte ik aan verschillende projecten. Dit waren zowel interne als externe projecten.</p>
                     <p>Bij alle projecten werkte ik met Siemens PLC’s. De libraries waren geschreven in STL en heb ik hier veel ervaring en kennis mee opgedaan.</p>
                     <p>Daarnaast heb ik met verschillende versioning systemen gewerkt, zoals Synergy (IBM Tools Suite) en SVN, en ook change request systemen, zoals Change en Jira. </p>
                     <p>Bij de projecten waar ik op site ging werkte ik vaak samen met verschillende disciplines, zoals de electrische discipline en de mechanische discipline.</p>
                     </section>
                         <h4> Project: <a href="https://www.daa.ie/">DAA Dublin</a></h4>
-                            <p><i> Rol: Controls project engineer</i></p>
+                            <section class="project">
+                            <p class="role"> Rol: Controls project engineer</p>
                             <p>Voor het vliegveld van Dublin werkte ik aan de software van twee systemen. </p>
                             <p>Ik hielp eerst met een kleine systeem. Dit systeem hebben onder grote druk in bedrijf kunnen stellen. Hierbij heb ik geholpen met het aanpassen van de software en was ik betrokken bij  het maken van speciale software voor specifieke functionaliteiten van het vliegveld. Uiteindelijk hebben we dit getest met een Factory Acceptance Test (FAT). Dit werd daarna ook op site getest, waar ik ook bij betrokken was. Bij problemen met de software loste ik op dat moment op. </p>
                             <p>Ik praatte met zowel de klant als derde partijen, maar ook intern communiceerde ik met de installatie team als de team op kantoor. </p>
                             <p>Na een succesvolle Site Acceptance Test en een succesvolle Integrated Site Acceptance Test, bleef ik ook op site om te helpen, terwijl het systeem in operatie ging.</p>
                             <p>Daarna hielp ik mee met een grotere systeem, waarin ik vooral meehielp met het oplossen van problemen in de software en het uitvoeren van testen. Uiteindelijk heeft dit ook geleidt tot een succesvolle FAT voor dit systeem. </p>
+                            </section>
                         <h4> Project: <a href="https://goo.gl/maps/dufiiESBst79fMGc8">Amazon BCN8 Sorting center</a></h4>
-                            <p><i> Rol: Controls project engineer</i></p>
+                            <section class="project">
+                            <p class="role"> Rol: Controls project engineer</p>
                             <p>Dit project vindt plaats in Barcelona, Spanje. Hier was ik voornamelijk verantwoordelijk voor het in bedrijf stellen van één van de PLC’s in de sorteer centrum. Hierbij werkte ik samen met electricians bij het controleren van de IO. Daarnaast configureerde ik software op plekken waar het nodig was, zoals snelheden.</p>
                             <p>Ik heb hier ook gewerkt met de safety PLC, waarvan ik de noodstoppen testte. Hierdoor kreeg ik een idee hoe de safety software werkt.</p>
+                            </section>
                         <h4> Project: R&amp;D Middle Bag Tubs</h4>
-                            <p><i> Rol: R&amp;D Engineer</i>[Interne project ICT]</p>
+                            <section class="project">
+                            <p class="role"> Rol: R&amp;D Engineer</p>
                             <p>Vanderlande besteedde een project uit aan ICT. Ik was hierbij een betrokken als een teamlid.</p>
                             <p>In dit project werd een maat van een tub groter gemaakt en dit moest ook gedaan worden in de software. Hierbij was ik verantwoordelijk voor een product van het systeem. Ik heb daarvoor software omgezet en de software getest. </p>
                             <p>Aan het einde van deze periode was ik ook verantwoordelijk voor het genereren van de software. Hierbij controleer ik of de software van de team te genereren is met de tooling van Vanderlande. Desnoods configureer ik de tooling met extra instellingen om de software te genereren.</p>
+                            </section>
                         <h4>Project: <a href="https://www.torontopearson.com/en">GTAA Toronto </a></h4>
-                            <p><i> Rol: Controls project engineer</i></p>
+                            <section class="project">
+                            <p class="role"> Rol: Controls project engineer</p>
                             <p>Dit project vond plaats bij het Pearson International in Toronto in Terminal 3. Deze terminal werd vernieuwd en hierbij werd het baggage systeem ook vernieuwd. </p>
                             <p>Ik heb hier geholpen met het in bedrijf stellen van software op verschillende plekken in deze terminal. Zo was ik betrokken bij diverse checkin systemen en screening systemen. </p>
                             <p>Hierbij heb ik bij één screening systeem meegeholpen met het testen van de software voor IFAT. Hierbij presenteerde en voerde ik de testen uit voor de klanten. </p>
                             <p>Echter het grootste gedeelte van deze periode was vooral op site. Zo werkte ik samen met een team, waar we de systemen testen. Hier had ik vooral de rol om de problemen op te lossen die uit de testen kwamen. Ik heb hier ook een rol opgepakt om als support te dienen voor de operaties.</p>
                             <p>Zo onderzocht ik ook verschillende problemen in de bestaande systemen en werd ik weleens gebeld door operatie om een probleem op te lossen. </p>
+                            </section>
                 <h3> <a href="https://rail.bombardier.com/en.html">Bombardier</a>: 2013 - 2016</h3>
-                    <p><i> Rol: Test engineer [Interne project ICT]</i></p>
+                    <section class="project">
+                    <p class="role"> Rol: Test engineer </p>
                     <p>Voor dit project heb ik vooral test cases uitgevoerd en nieuwe testcases gemaakt voor nieuwe functionaliteiten van een bestaande treinenserie. Hierbij leerde ik om systeem testen te maken en nieuwe testcases te ontwerpen. Ik voerde deze testen dan ook uit op een trein, waarbij ik moest samenwerken met Duitse machinisten.</p>
                     <p>De machinisten praatten vooral Duits en de testcases waren ook in het Duits. Hierdoor kon en moest ik mijn Duits verbeteren. Hierdoor ging ik dus uiteindelijk beter Duits praten. </p>
                     <p>Na het uitvoeren van de testen maakte ik ook de testrapporten. Bij eventuele gefaalde tests hielp ik soms mee met het analyseren van het probleem in de software.</p>
-                </section>
+                    </section>
             <h2><a href="https://www.dataaccess.eu/">Data Access Europe</a>: 2011 - 2013</h2>
-                <p>Rol: <i>Software engineer</i></p>
+                <section class="project">
+                <p class="role">Rol: Software engineer</p>
                 <p>Met behulp van Dataflex (programmeertaal van Data Access) maakte ik SQL query’s, applicaties en rapporten voor klanten of interne projecten. Hierbij heb ik veel gewerkt met databases en raakte ik bekend met relationele databases. </p>
+                </section>
             <h2>Stage: 2009 – 2011</h2>
                 <p><a href="https://www.sron.nl/"><u>SRON Netherlands Institute for Space</u></a></p>
                 <p><a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwio86-kkOjuAhVwyoUKHQ4rBDoQFjAAegQIBhAC&amp;url=https%3A%2F%2Fwww.croonwolterendros.nl%2Fnl&amp;usg=AOvVaw2V96JBelq5_Tfm3Jmbas6M"><u>Croon Elektrotechniek</u></a></p>
         <h1>Educatie</h1>
             <h2>Cursussen</h2>
-                <p><b>Siemens Systeem cursus 1A +B</b>: Certificaat behaald</p>
-                <p><b>ISQTB Foundation</b>:Certificaat behaald</p>
+                <table>
+                    <tr>
+                        <th>Cursus naam</th>
+                        <th>Certificaat</th>
+                    </tr>
+                        <td>Siemens Systeem cursus 1A+B</td>
+                        <td>Certificaat behaald</td>
+                    <tr>
+                        <td>ISQTB Foundation</td>
+                        <td>Certificaat behaald</td>
+                    </tr>
+                </table>
             <h2>Opleidingen</h2>
                 <table>
                     <tr>
@@ -105,7 +205,7 @@
                     <tr>
                         <td>TU Twente</td>
                         <td>Embedded Systems</td>
-                        <td><b>niet</b> behaald</td>
+                        <td>Diploma <b>niet</b> behaald</td>
                     </tr>
                     <tr>
                         <td>Windesheim</td>
@@ -118,7 +218,7 @@
                         <td>Diploma behaald</td>
                     </tr>
                 </table>
-            <h2>Talen</h2>
+<!--            <h2>Talen</h2>
             <ul>
                 <li>Nederlands</li>
                 <li>Engels</li>
@@ -137,6 +237,7 @@
                 <li>Programmeren</li>
                 <li>Muziek spelen</li>
                 <li>Films maken</li>
-            </ul>
+	    </ul>-->
+	</div>
     </body>
 </html>
