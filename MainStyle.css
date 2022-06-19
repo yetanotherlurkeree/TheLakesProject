@@ -1,6 +1,8 @@
 h1{
 	color: White;
 	padding-top: 20px;
+	text-align:center;
+	width:80%;
 }
 
 h2{
@@ -34,10 +36,13 @@ a:hover{
 }
 table{
     margin-left:30px;
-    width:55%;
+    width:80%;
 }
 table td{
     padding-right:10px;
+}
+table td.cert{
+	text-align: center;
 }
 th{
     text-align:left;
