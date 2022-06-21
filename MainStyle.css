@@ -1,20 +1,46 @@
+/*
+ * Headers
+ *
+ * Headers 1 goes at the top of the page
+ *
+ */
 h1{
 	color: White;
 	padding-top: 20px;
 	text-align:center;
-	width:80%;
 }
-
-h2{
+/*
+ * Header 2 depends on the location
+ */
+h2.company{
 	color: White;
 	padding-top: 20px;
-    margin-left:20px;
+    	margin-left:20px;
+	text-align: center;
 }
-
-h3{
+h2.headerme{
 	color: White;
 	padding-top: 20px;
-    margin-left:40px;
+}
+h3.normal{
+	color: white;
+	padding-top: 20px;
+    	margin-left:20px;
+	text-align:center;
+}
+h3.initem{
+	color: White;
+	padding-top: 20px;
+	text-align:center;
+}
+.left{
+	text-align:left;
+	padding-left:75px;
+}
+
+.intro{
+	margin-left:15%;
+	margin-right:15%;
 }
 
 h4{
@@ -22,7 +48,135 @@ h4{
 	padding-top: 20px;
     margin-left:60px;
 }
+/*
+ * Table stuff
+ *
+ */
+table{
+    margin-left:10%;
+    margin-right:10%;
+    width:90%;
+}
+table td{
+    padding-right:10px;
+}
+table td.cert{
+	text-align: center;
+}
+table th.cert{
+	text-align:center;
+}
+th{
+    text-align:left;
+    font-style:bold;
+    padding-right:10px;
+}
+td.personal{
+    text-align:left;
+}
+td.personalleft{
+    text-align:right;
+    vertical-align:center;
+}
 
+/*
+ *  Trying out flexbox to get the stuff to go correctly.  
+ *  Basically the idea is to  have the profile picture next to the about me section
+ *  with the container and item (/profilepic) 
+ *  */
+.container{
+	display: flex;
+	margin-right:10%;
+	margin-left:10%;
+}
+.container-workxp{
+	display: flex;
+	margin-right: 15%;
+	margin-left:15%;
+}
+.item{
+	flex-basis: 100%;
+	margin: 5px;
+	background: gray;
+	color: black;
+	border: solid white 0.1rem;
+	padding-right: 15px;
+	padding-bottom:24px;
+	text-align: center;
+
+}
+.items-aboutme{
+	flex-basis: 100%;
+	margin: 5px;
+	padding-right: 15px;
+
+}
+.items-workxp{
+	flex-basis: 100%;
+	margin:2%;
+}
+.item a:link{
+	color: white;
+}
+.item a:visited{
+	color: lightgrey;
+}
+.item a:hover{
+	color: white;
+}
+.item-center{
+	flex-basis: 100%; 
+	margin:10px;
+	align-text:center;
+}
+.profilepic{
+	flex-basis:500px;
+	margin-top: 80px;
+	align-items: center;
+	text-align: center;
+	vertical-align: center;
+}
+.element{
+	display: inline;
+	width: 80%;
+	
+}
+section.company{
+    margin-left:20px;
+    width: 67%;
+}
+section.project{
+    margin-left:80px;
+}
+p.role{
+    font-style: italic;
+    color: lightgray;
+}
+p.small{
+    margin-left:20px;
+}
+p.center{
+	text-align:center;
+}
+body{
+	background-color: black;
+	color: white;
+	margin-left: 50px;
+	margin-right: 50px;
+    font-family: "Bitstream Vera Sans";
+    align-items:center;
+}
+.footer{
+	left: 0;
+	bottom: 0;
+	height: 150px;
+	background-color: gray;
+	color: white;
+	text-align:center;
+}
+/*
+ * links
+ */
 a:link{
     color: red;
 }
@@ -33,75 +187,4 @@ a:visited{
 
 a:hover{
     color: pink;
-}
-table{
-    margin-left:30px;
-    width:80%;
-}
-table td{
-    padding-right:10px;
-}
-table td.cert{
-	text-align: center;
-}
-th{
-    text-align:left;
-    font-style:bold;
-    padding-right:10px;
-}
-
-/*
- *  Trying out flexbox to get the stuff to go correctly.  
- *  Basically the idea is to  have the profile picture next to the about me section
- *  with the container and item (/profilepic) 
- *  */
-.container{
-	display: flex;
-	width:80%;
-}
-.item{
-	flex-basis: 100%;
-	margin: 5px;
-}
-.profilepic{
-	margin: 5% auto;
-	width:100%;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-}
-.element{
-	display: inline;
-	width: 80%;
-	
-}
-td.personal{
-    text-align:left;
-}
-td.personalleft{
-    text-align:right;
-    vertical-align:top;
-}
-section.company{
-    margin-left:20px;
-    width: 67%;
-}
-section.project{
-    margin-left:80px;
-       width: 60%;
-}
-p.role{
-    font-style: italic;
-    color: lightgray;
-}
-p{
-    margin-left:20px;
-}
-body{
-	background-color: black;
-	color: white;
-	margin-left: 50px;
-	margin-right: 50px;
-    font-family: "Bitstream Vera Sans";
-    width:90%;
 }
