@@ -4,12 +4,41 @@
         <title>Cirruculum Vitea - Nederlands</title>
         <nav> 
             <a href="../index.html">Home</a>
-            <a href="CV.html">Dutch Resume</a>
-            English Resume (TO DO)
+            <a href="resume_nl.html">Dutch Resume</a>
+            <a href="resume_en.html">English Resume</a>
             <a href="../contact.html">Contact</a>
         </nav>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <style>
+            button.print-button {
+                padding: 8px 16px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 16px;
+                margin: 10px 0;
+            }
+            button.print-button:hover {
+                background-color: #45a049;
+            }
+            @media print {
+                nav, .noprint, button.print-button {
+                    display: none !important;
+                }
+                @page {
+                    margin: 0;
+                    size: auto;
+                }
+                body {
+                    margin: 1.6cm;
+                }
+            }
+        </style>
     </head>
     <body>
+    <button class="print-button" onclick="window.print()">Print to PDF</button>
     <h1>Samy Rahakbauw</h1>
     <div class="personal_detail_container">
         <table id="personal_details">
@@ -27,15 +56,18 @@
             </tr>
             <tr>
                 <td>Over mij:</td>
-                <td>Engineer dat graag analyseert en problemen oplost bij de grondoorzaak. Werkt graag in harmonie samen met anderen. Ik werk graag aan mijn homeserver en mijn netwerk. Verder ben ik een rustige, maar ook wel sociale persoon.</td>
+                <td>Een rustige engineer die graag analyseert, problemen oplost en graag waarde wil toevoegen. Werkt graag in harmonie samen met anderen. Ik werk graag aan mijn homeserver en mijn netwerk. Verder ben ik een rustige, maar ook wel sociale persoon.</td>
             </tr>
             <tr>
                 <td>Socials</td>
                 <td><a href="">LinkedIn</a> <a  href="">Github</a></td>
             </tr>
         </table>
+        <div class="profile_picutre">
+            <img src="">Profile picture</img>
+            <img src="">QR code for digital version</img>
+        </div>
     </div>
-    <div class="profile_picutre"> profile picture</div>
     <h1 class="workxp">Werk ervaring</h1>
 	<table>
         <tr id="NSTM">
@@ -86,10 +118,8 @@
             <td class="company_xp"><a href="">Stage</a></td>
             <td class="company_xp_period">2009-2010</td>
             <td class="compnay_xp_desc">
-                <div class="work-xp-star">
-                    <p class="right"><a href="https://www.sron.nl/"><u>SRON Netherlands Institute for Space (2010)</u></a></p>
-                    <p class="right"><a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwio86-kkOjuAhVwyoUKHQ4rBDoQFjAAegQIBhAC&amp;url=https%3A%2F%2Fwww.croonwolterendros.nl%2Fnl&amp;usg=AOvVaw2V96JBelq5_Tfm3Jmbas6M"><u>Croon Elektrotechniek (2009)</u></a></p>
-                </div>
+                <p><a href="https://www.sron.nl/"><u>SRON Netherlands Institute for Space (2010)</u></a></p>
+                <p><a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwio86-kkOjuAhVwyoUKHQ4rBDoQFjAAegQIBhAC&amp;url=https%3A%2F%2Fwww.croonwolterendros.nl%2Fnl&amp;usg=AOvVaw2V96JBelq5_Tfm3Jmbas6M"><u>Croon Elektrotechniek (2009)</u></a></p>
 		</tr>
 	</table>
     <script>
