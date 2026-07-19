@@ -1,0 +1,232 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+    <head>
+        <title>Resume - English</title>
+        <nav> 
+            <a href="../index.html">Home</a>
+            <a href="resume_nl.html">Dutch Resume</a>
+            <a href="resume_en.html">English Resume</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <style>
+            button.print-button {
+                padding: 8px 16px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 16px;
+                margin: 10px 0;
+            }
+            button.print-button:hover {
+                background-color: #45a049;
+            }
+            @media print {
+                nav, .noprint, button.print-button {
+                    display: none !important;
+                }
+                @page {
+                    margin: 0;
+                    size: auto;
+                }
+                body {
+                    margin: 1.6cm;
+                }
+            }
+        </style>
+    </head>
+    <body>
+    <button class="print-button" onclick="window.print()">Print to PDF</button>
+    <h1>Samy Rahakbauw</h1>
+    <div class="personal_detail_container">
+        <table id="personal_details">
+            <tr>
+                <td>Name:</td>
+                <td>(Samy) Yehezkiel Lakes Rahakbauw</td>
+            </tr>
+            <tr>
+                <td>Date of Birth:</td>
+                <td >07-08-1989 (<a id="age"></a> years old)</td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td>Vogelweide 96, 3815HE, Amersfoort</td>
+            </tr>
+            <tr>
+                <td>About me:</td>
+                <td>A calm engineer who enjoys analyzing, solving problems and adding value. Works well in harmony with others. I enjoy working on my home server and my network. Furthermore, I am a calm, but also quite social person.</td>
+            </tr>
+            <tr>
+                <td>Socials</td>
+                <td><a href="">LinkedIn</a> <a  href="">Github</a></td>
+            </tr>
+        </table>
+        <div class="profile_picutre">
+            <img src="">Profile picture</img>
+            <img src="">QR code for digital version</img>
+        </div>
+    </div>
+    <h1 class="workxp">Work Experience</h1>
+	<table>
+        <tr id="NSTM">
+            <td class="company_xp"><a href="workxp/NSTM.html">NS Train Modernization (NSTM)</a></td>
+            <td class="company_xp_period">2022-present</td>
+            <td class="compnay_xp_desc">
+                <div class="company_xp_star">
+                    NSTM modernizes and modifies trains. They build new systems to extend the train's lifespan. I was active in two teams, with different roles in each.
+                </div>
+
+                <a href="workxp/NSTM.html" class="company_xp_project">Performance Team</a> - 01-09-2023 to present
+                <div class="company_xp_role">Data Engineer/Data Analyst</div>
+                <div class="work-xp-star">
+                    To verify if systems are working properly, they need to be monitored. For this, data is used to monitor the system's performance. I worked as a data analyst and data engineer. I built pipelines and created system analyses using the data. 
+                    This went well. Eventually, together with the team, I introduced a new way to monitor the performance. 
+                </div>
+                <a href="workxp/NSTM.html" class="company_xp_project">Product Group IT</a> - 01-11-2022 to present
+                <div class="company_xp_role">Engineer</div>
+                <div class="work-xp-star">As an Engineer, you design and test a system to meet customer requirements. In the IT product group, the focus is mainly on IT systems on the train, such as CCTV and the network. As an engineer, you also create test plans and test protocols.</div>
+		</tr>
+        <tr id="ICT">
+            <td class="company_xp"><a href="workxp/ICT.html">ICT</a></td>
+            <td class="company_xp_period">2013-2022</td>
+            <td class="compnay_xp_desc">
+                <a href="workxp/ICT.html#Vanderlande" class="company_xp_project">Vanderlande</a> - 01-03-2013 to 01-11-2022
+                <div class="company_xp_role">Controls Project Engineer</div>
+                <div class="work-xp-star">
+                    Vanderlande makes baggage handling systems. This multidisciplinary system includes PLC software to control the machines. As a Controls Project Engineer, I created and tested this software, both on test setups and on-site. I also created project-specific software and worked extensively with both internal and external colleagues. Ultimately, the projects I worked on were successful. 
+                </div>
+
+                <a href="workxp/ICT.html#Bombardier" class="company_xp_project">Bombardier</a> - 01-05-2013 to 31-01-2016
+                <div class="company_xp_role">Test Engineer</div>
+                <div class="work-xp-star">
+                    Bombardier makes trains for rail transport companies such as NS. I worked as a Test Engineer, testing the software for train control. I performed both verification and validation tests. I was responsible for creating, executing, and reporting the tests. 
+                </div>
+
+		</tr>
+        <tr id="DataAccess">
+            <td class="company_xp"><a href="">Data Access Europe B.V.</a></td>
+            <td class="company_xp_period">2011-2013</td>
+            <td class="compnay_xp_desc">
+                <div class="company_xp_role">Software Engineer</div>
+                <div class="work-xp-star">
+                    Here I worked as a Software Engineer on multiple database applications. I learned to work with different languages, such as Dataflex and SQL.
+                </div>
+		</tr>
+        <tr id="Stages">
+            <td class="company_xp"><a href="">Internships</a></td>
+            <td class="company_xp_period">2009-2010</td>
+            <td class="compnay_xp_desc">
+                <p><a href="https://www.sron.nl/"><u>SRON Netherlands Institute for Space Research (2010)</u></a></p>
+                <p><a href="https://www.croonwolterendros.nl/nl"><u>Croon Elektrotechniek (2009)</u></a></p>
+		</tr>
+	</table>
+    <script>
+		const birthdate = new Date("1989-08-07")
+                // Credit: https://stackoverflow.com/questions/4060004/calculate-age-given-the-birth-date-in-the-format-yyyymmdd
+                function _calculateAge(birthday) { // birthday is a date
+			var ageDifMs = Date.now() - birthday.getTime();
+			var ageDate = new Date(ageDifMs); // miliseconds from epoch
+			return Math.abs(ageDate.getUTCFullYear() - 1970);
+		}
+                document.getElementById("age").innerHTML = _calculateAge(birthdate);
+    </script>
+	<hr>
+	<h1>Education</h1>
+		<table>
+			<tr>
+				<th>Period</th>
+				<th>School</th>
+				<th>Education/Course</th>
+				<th class="cert">Diploma/Certificate</th>
+			</tr>
+			<tr>
+				<td>2015</td>
+				<td>ISQTB</td>
+				<td>ISQTB Foundation</td>
+				<td class="cert">&#9989;</td>
+			</tr>
+			<tr>
+				<td>2013</td>
+				<td>Siemens</td>
+				<td>Siemens System Course 1A+B</td>
+				<td class="cert">&#9989;</td>
+			</tr>
+			<tr>
+				<td>2010-2011</td>
+				<td>TU Twente</td>
+				<td>Embedded Systems</td>
+				<td class="cert">&#10060;</td>
+			</tr>
+			<tr>
+				<td>2006-2010</td>
+				<td>Windesheim</td>
+				<td>HBO Electrical Engineering</td>
+				<td class="cert">&#9989;</td>
+			</tr>
+			<tr>
+				<td>2001-2006</td>
+				<td>Thorbecke</td>
+				<td>HAVO</td>
+				<td class="cert">&#9989;</td>
+			</tr>
+		</table>
+	<hr>
+    <table>
+        <tr>
+            <th>Languages</th>
+            <th>Skills</th>
+            <th>Hobbies</th>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>Dutch</li>
+                    <li>English</li>
+                    <li>German</li>
+                    <li>Indonesian</li>
+                </ul>
+            </td>
+            <td>
+				<ul>
+					<li>Creative</li>
+					<li>Analytical</li>
+					<li>Solution-oriented</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Testing Free/Libre software</li>
+                    <li>Making/editing films</li>
+                </ul>
+				
+
+            </td>
+        </tr>
+    </table>
+    <!--
+	<div class="container">
+		<div class="items-aboutme">
+			<h3>Languages</h3>
+		</div>
+		<div class="items-aboutme">
+			<h3 >Skills</h3>
+			<ul>
+				<li>Creative</li>
+				<li>Analytical</li>
+				<li>Solution-oriented</li>
+			</ul>
+		</div>
+		<div class="items-aboutme">
+			<h3>Hobbies</h3>
+			<ul>
+				<li>Sports, such as skateboarding and basketball</li>
+				<li>Programming</li>
+				<li>Playing music</li>
+				<li>Making films</li>
+			</ul>
+		</div>
+    -->
+    </body>
+</html>
