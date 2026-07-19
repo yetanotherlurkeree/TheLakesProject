@@ -1,0 +1,356 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+    <head>
+        <title>Resume - Samy Rahakbauw - English</title>
+        <nav> 
+            <a href="../index.html">Home</a>
+            <a href="resume_nl.html">Dutch Resume (Full)</a>
+            <a href="resume_nl_onepage.html">Dutch One-Page</a>
+            <a href="resume_en.html">English Resume</a>
+            <a href="resume_en_onepage.html">English Resume (One-Page)</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                font-size: 11pt;
+                line-height: 1.3;
+                max-width: 100%;
+                margin: 0;
+                padding: 10px;
+                color: #333;
+            }
+            
+            @page {
+                size: A4;
+                margin: 1cm;
+            }
+            
+            h1 {
+                font-size: 18pt;
+                border-bottom: 2px solid #333;
+                padding-bottom: 5px;
+                margin-top: 0;
+            }
+            
+            h2 {
+                font-size: 14pt;
+                color: #444;
+                margin-top: 15px;
+                margin-bottom: 8px;
+            }
+            
+            h3 {
+                font-size: 12pt;
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+            
+            .section {
+                margin-bottom: 15px;
+            }
+            
+            .personal-info {
+                display: grid;
+                grid-template-columns: 120px 1fr;
+                gap: 5px;
+                margin-bottom: 15px;
+            }
+            
+            .personal-info strong {
+                font-weight: bold;
+            }
+            
+            .job {
+                margin-bottom: 12px;
+            }
+            
+            .job-header {
+                display: flex;
+                justify-content: space-between;
+                font-weight: bold;
+                margin-bottom: 3px;
+            }
+            
+            .company {
+                font-weight: bold;
+            }
+            
+            .period {
+                color: #666;
+                font-size: 10pt;
+            }
+            
+            .role {
+                font-style: italic;
+                color: #555;
+                margin-bottom: 5px;
+            }
+            
+            .description {
+                margin-left: 15px;
+                margin-bottom: 8px;
+                font-size: 10pt;
+            }
+            
+            .description li {
+                margin-bottom: 3px;
+            }
+            
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                font-size: 10pt;
+                margin-bottom: 10px;
+            }
+            
+            th, td {
+                padding: 5px;
+                text-align: left;
+                border-bottom: 1px solid #eee;
+            }
+            
+            th {
+                background-color: #f5f5f5;
+                font-weight: bold;
+            }
+            
+            .skills-table {
+                width: 100%;
+            }
+            
+            .skills-table td {
+                vertical-align: top;
+                width: 33%;
+                border: none;
+                padding: 5px;
+            }
+            
+            .skills-table ul {
+                margin: 0;
+                padding-left: 15px;
+            }
+            
+            .skills-table li {
+                margin-bottom: 3px;
+                font-size: 10pt;
+            }
+            
+            hr {
+                border: 0;
+                height: 1px;
+                background: #ddd;
+                margin: 10px 0;
+            }
+            
+            button.print-button {
+                padding: 8px 16px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 14px;
+                margin: 10px 0;
+                float: right;
+            }
+            
+            button.print-button:hover {
+                background-color: #45a049;
+            }
+            
+            @media print {
+                nav, button.print-button {
+                    display: none !important;
+                }
+                body {
+                    margin: 0;
+                    padding: 1cm;
+                }
+                @page {
+                    margin: 0.5cm;
+                    size: A4;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <button class="print-button" onclick="window.print()">Print to PDF</button>
+        <h1>Samy Rahakbauw - Resume</h1>
+        
+        <div class="section">
+            <h2>Personal Details</h2>
+            <div class="personal-info">
+                <div><strong>Name:</strong></div>
+                <div>(Samy) Yehezkiel Lakes Rahakbauw</div>
+                
+                <div><strong>Date of Birth:</strong></div>
+                <div>07-08-1989 (<a id="age"></a> years old)</div>
+                
+                <div><strong>Address:</strong></div>
+                <div>Vogelweide 96, 3815HE, Amersfoort</div>
+                
+                <div><strong>Profile:</strong></div>
+                <div>A calm engineer who enjoys analyzing, solving problems and adding value. Works well with others.</div>
+                
+                <div><strong>Socials:</strong></div>
+                <div><a href="">LinkedIn</a>, <a href="">Github</a></div>
+            </div>
+        </div>
+        
+        <hr>
+        
+        <div class="section">
+            <h2>Work Experience</h2>
+            
+            <div class="job">
+                <div class="job-header">
+                    <span class="company">NS Train Modernization (NSTM)</span>
+                    <span class="period">2022-present</span>
+                </div>
+                
+                <div class="role">Data Engineer/Data Analyst (Performance Team, 2023-present)</div>
+                <ul class="description">
+                    <li>Built data pipelines and performed analyses to monitor system performance</li>
+                    <li>Introduced new monitoring methods</li>
+                </ul>
+                
+                <div class="role">Engineer (Product Group IT, 2022-present)</div>
+                <ul class="description">
+                    <li>Design and testing of IT systems (CCTV, network) for trains</li>
+                    <li>Creating test plans and protocols</li>
+                </ul>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <span class="company">ICT Group</span>
+                    <span class="period">2013-2022</span>
+                </div>
+                
+                <div class="role">Controls Project Engineer (Vanderlande, 2013-2022)</div>
+                <ul class="description">
+                    <li>Developed PLC software for baggage handling systems</li>
+                    <li>Testing on test setups and on-site, collaboration with internal/external colleagues</li>
+                </ul>
+                
+                <div class="role">Test Engineer (Bombardier, 2013-2016)</div>
+                <ul class="description">
+                    <li>Verification and validation tests for train control software</li>
+                    <li>Responsible for test creation, execution and reporting</li>
+                </ul>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <span class="company">Data Access Europe B.V.</span>
+                    <span class="period">2011-2013</span>
+                </div>
+                <div class="role">Software Engineer</div>
+                <ul class="description">
+                    <li>Development of database applications in Dataflex and SQL</li>
+                </ul>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <span class="company">Internships</span>
+                    <span class="period">2009-2010</span>
+                </div>
+                <ul class="description">
+                    <li><a href="https://www.sron.nl/">SRON Netherlands Institute for Space Research</a> (2010)</li>
+                    <li><a href="https://www.croonwolterendros.nl/nl">Croon Elektrotechniek</a> (2009)</li>
+                </ul>
+            </div>
+        </div>
+        
+        <hr>
+        
+        <div class="section">
+            <h2>Education</h2>
+            <table>
+                <tr>
+                    <th>Year</th>
+                    <th>Education</th>
+                    <th>Institute</th>
+                    <th class="cert">Certificate</th>
+                </tr>
+                <tr>
+                    <td>2015</td>
+                    <td>ISQTB Foundation</td>
+                    <td>ISQTB</td>
+                    <td class="cert">&#9989;</td>
+                </tr>
+                <tr>
+                    <td>2013</td>
+                    <td>Siemens System Course 1A+B</td>
+                    <td>Siemens</td>
+                    <td class="cert">&#9989;</td>
+                </tr>
+                <tr>
+                    <td>2010-2011</td>
+                    <td>Embedded Systems</td>
+                    <td>TU Twente</td>
+                    <td class="cert">&#10060;</td>
+                </tr>
+                <tr>
+                    <td>2006-2010</td>
+                    <td>HBO Electrical Engineering</td>
+                    <td>Windesheim</td>
+                    <td class="cert">&#9989;</td>
+                </tr>
+                <tr>
+                    <td>2001-2006</td>
+                    <td>HAVO</td>
+                    <td>Thorbecke</td>
+                    <td class="cert">&#9989;</td>
+                </tr>
+            </table>
+        </div>
+        
+        <hr>
+        
+        <div class="section">
+            <h2>Overview</h2>
+            <table class="skills-table">
+                <tr>
+                    <td>
+                        <strong>Languages:</strong>
+                        <ul>
+                            <li>Dutch</li>
+                            <li>English</li>
+                            <li>German</li>
+                            <li>Indonesian</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <strong>Skills:</strong>
+                        <ul>
+                            <li>Creative</li>
+                            <li>Analytical</li>
+                            <li>Solution-oriented</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <strong>Hobbies:</strong>
+                        <ul>
+                            <li>Testing Free/Libre software</li>
+                            <li>Making/editing films</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <script>
+            const birthdate = new Date("1989-08-07");
+            function _calculateAge(birthday) {
+                var ageDifMs = Date.now() - birthday.getTime();
+                var ageDate = new Date(ageDifMs);
+                return Math.abs(ageDate.getUTCFullYear() - 1970);
+            }
+            document.getElementById("age").innerHTML = _calculateAge(birthdate);
+        </script>
+    </body>
+</html>
