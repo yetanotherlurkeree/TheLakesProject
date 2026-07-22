@@ -51,11 +51,27 @@
                 margin-bottom: 15px;
             }
             
+            .personal-info-container {
+                display: flex;
+                align-items: flex-start;
+                gap: 15px;
+                margin-bottom: 15px;
+            }
+            
+            .profile-picture {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 2px solid #333;
+                flex-shrink: 0;
+            }
+            
             .personal-info {
                 display: grid;
                 grid-template-columns: 120px 1fr;
                 gap: 5px;
-                margin-bottom: 15px;
+                flex: 1;
             }
             
             .personal-info strong {
@@ -181,21 +197,24 @@
         
         <div class="section">
             <h2>Persoonlijke gegevens</h2>
-            <div class="personal-info">
-                <div><strong>Naam:</strong></div>
-                <div>(Samy) Yehezkiel Lakes Rahakbauw</div>
-                
-                <div><strong>Geboortedatum:</strong></div>
-                <div>07-08-1989 (<a id="age"></a> jaar)</div>
-                
-                <div><strong>Adres:</strong></div>
-                <div>Vogelweide 96, 3815HE, Amersfoort</div>
-                
-                <div><strong>Profiel:</strong></div>
-                <div>Rustige engineer die graag analyseert, problemen oplost en waarde toevoegt. Werkt goed samen met anderen.</div>
-                
-                <div><strong>Socials:</strong></div>
-                <div><a href="">LinkedIn</a>, <a href="">Github</a></div>
+            <div class="personal-info-container">
+                <img src="../assets/profile.jpg" alt="Profiel Foto" class="profile-picture">
+                <div class="personal-info">
+                    <div><strong>Naam:</strong></div>
+                    <div>(Samy) Yehezkiel Lakes Rahakbauw</div>
+                    
+                    <div><strong>Geboortedatum:</strong></div>
+                    <div>07-08-1989 (<a id="age"></a> jaar)</div>
+                    
+                    <div><strong>Adres:</strong></div>
+                    <div>Vogelweide 96, 3815HE, Amersfoort</div>
+                    
+                    <div><strong>Profiel:</strong></div>
+                    <div>Rustige engineer die graag analyseert, problemen oplost en waarde toevoegt. Werkt goed samen met anderen.</div>
+                    
+                    <div><strong>Socials:</strong></div>
+                    <div><a href="">LinkedIn</a>, <a href="">Github</a></div>
+                </div>
             </div>
         </div>
         
@@ -277,6 +296,12 @@
                     <th class="cert">Certificaat</th>
                 </tr>
                 <tr>
+                    <td>2017</td>
+                    <td>VCA Basis</td>
+                    <td>VCA</td>
+                    <td class="cert">&#9989;</td>
+                </tr>
+                <tr>
                     <td>2015</td>
                     <td>ISQTB Foundation</td>
                     <td>ISQTB</td>
@@ -312,33 +337,20 @@
         <hr>
         
         <div class="section">
-            <h2>Overzicht</h2>
             <table class="skills-table">
                 <tr>
                     <td>
-                        <strong>Talen:</strong>
-                        <ul>
-                            <li>Nederlands</li>
-                            <li>Engels</li>
-                            <li>Duits</li>
-                            <li>Indonesisch</li>
-                        </ul>
+                        <strong>Talen:</strong></br>
+                        Nederlands, Engels, Duits, Indonesisch
                     </td>
                     <td>
-                        <strong>Vaardigheden:</strong>
-                        <ul>
-                            <li>Creatief</li>
-                            <li>Analytisch</li>
-                            <li>Oplossingsgericht</li>
-                        </ul>
+                        <strong>Vaardigheden:</strong></br>
+                        Creatief, Analytisch, Oplossingsgericht
                     </td>
                     <td>
-                        <strong>Hobby's:</strong>
-                        <ul>
-                            <li>Free/Libre software testen</li>
-                            <li>Films maken/editen</li>
-                        </ul>
-                    </td>
+                        <strong>Hobby's:</strong></br> 
+                        Free/Libre software testen, Films maken/editen
+                </td>
                 </tr>
             </table>
         </div>
